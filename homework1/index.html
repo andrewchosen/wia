@@ -2,6 +2,15 @@
 <html>
 <head>
     <title>HTML5 Drawing</title>
+    <style type="text/css">
+
+    canvas {
+        border: 1px solid #999;
+        margin: 20px;
+        width: 100%;
+    }
+
+    </style>
 </head>
 <body>
     <div id="container">
@@ -22,11 +31,13 @@
     <canvas id="Canvas5" width="700" height="500">
     	<p>Your browser does not support canvas.</p>
     </canvas>
-    <canvas id="Canvas6" width="700" height="500">
+    <canvas id="Canvas6" width="1000" height="2000">
     	<p>Your browser does not support canvas.</p>
+        <img id="img1" src="image/logo.png" alt="Source Image" style="display:none;">
     </canvas>
-    <canvas id="Canvas7" width="700" height="500">
+    <canvas id="Canvas7" width="700" height="700">
     	<p>Your browser does not support canvas.</p>
+        <img id="bandaid" src="image/bandaid.png" alt="Bandaid Image" style="display:none;">
     </canvas>
     <script src="includes/modernizr.js"></script>
     <script src="js/main.js"></script>
