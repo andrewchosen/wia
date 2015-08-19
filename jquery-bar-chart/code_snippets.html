@@ -1,0 +1,78 @@
+
+<!-- ::::: HTML Snippets :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+	<!-- Debug markup -->
+	<p class="debug">
+		<span class="chartHeight">0</span><br/> 
+		<span class="maxValue">0</span><br/>
+		<span class="valueMultiplier">0</span><br/>
+		<span class="highestYlabel">0</span><br/>
+		<span class="chartHeightArea">0</span><br/>
+		<span class="chartScale">0</span><br/>
+	</p>
+	
+	
+	<!-- Bar Chart markup -->
+	<div class="chart-container">
+		<div class="chart-title">
+			<h2>Sales per Department &#151; Quarter 4</h2>
+			<p>Figures are in hundreds of US dollars.</p>
+		</div>
+		<div class="chart-content">
+			<div class="chart-y-axis">
+				<p style="top:0px;">1000</p>
+				<p style="bottom:0px;">0</p>
+			</div>
+			<div class="chart-area" bar-spacing="30">
+			</div>
+			<div class="chart-x-axis"></div>
+		</div>
+	</div>
+	
+	<!-- Chart Bars markup -->
+	<div bar-value="621" label="Housewares" class="chart-bar hoursewares"></div>
+	<div bar-value="521" label="Shipping"   class="chart-bar shipping"></div>
+	<div bar-value="832" label="Clothing"   class="chart-bar clothing"></div>
+	<div bar-value="418" label="Jewelry"    class="chart-bar jewelry"></div>
+
+
+
+
+
+<!-- ::::: JavaScript Snippets ::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<script type="text/javascript">
+	
+	// 1..... Declare global variables.................
+
+	var barSpacing = 0;
+	var barWidth = 0;
+	var chartHeight = 0;
+	var chartHeightArea = 0;
+	var chartScale = 0;
+	var maxValue = 0;
+	var highestYlabel = 0;
+	var valueMultiplier = 0;
+	
+
+	// 2..... Document ready - set variables..........
+
+	window.chartHeight = Number($('.chart-area').height());
+	window.barWidth = $('.chart-area .chart-bar').width();
+	window.highestYlabel = Number($('.chart-y-axis p').first().html());
+	window.chartHeightArea = window.chartHeight - Number($('p.axis-value').first().height());
+	window.chartScale = chartHeightArea / window.highestYlabel;
+	window.barSpacing = Number($('.chart-area').attr('bar-spacing'));
+	
+
+	// 3..... Update debug information..............
+
+	/* debug */ $('.valueMultiplier').html('valueMultiplier = '+window.valueMultiplier);
+	/* debug */ $('.highestYlabel').html('highestYlabel = '+highestYlabel);
+	/* debug */ $('.maxValue').html('maxValue = ' + window.maxValue);
+	/* debug */ $('.chartHeight').html('chartHeight = '+window.chartHeight);
+	/* debug */ $('.chartHeightArea').html('chartHeightArea = '+window.chartHeightArea);
+	/* debug */ $('.chartScale').html('chartScale = '+window.chartScale);
+	
+	
+</script>
+
