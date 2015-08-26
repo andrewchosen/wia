@@ -1,0 +1,75 @@
+/* 
+================================================================================
+HOVERINTENT EXAMPLE STYLESHEET
+================================================================================ */
+
+body {
+	font: 18px/1.4 'Roboto Condensed', sans-serif;;
+	background: #DAEDE2;
+	color: #282B36;
+}
+
+section, header {
+	max-width: 960px;
+	margin: 100px auto;
+}
+
+h1 a {
+	font-size: 3rem;
+	color: #282B36;
+}
+
+section a {
+	color: #DAEDE2;
+	text-decoration: none;
+}
+
+section a:hover {
+	color: #FFF;
+}
+
+section > ul::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	display: block;
+	height: 49px;
+	width: 100%;
+	background: #333745;
+}
+
+section > ul li {
+	float: left;
+	list-style-type: none;
+	position: relative;
+}
+
+section ul li:hover a {
+	background: #EA2E49;
+}
+
+section > ul > li > a {
+	display: block;
+	padding: 12px 15px;
+	background: #333745;
+}
+
+section > ul > li > ul {
+	position: absolute;
+	padding: 0;
+	left: 0;
+	top: 49px;
+	display: none;
+}
+
+section > ul > li > ul > li > a {
+	display: block;
+	width: 160px;
+	padding: 10px 15px;
+	font-size: 0.9rem;
+	background: #333745;
+}
+
+section > ul > li > ul > li > a:hover {
+	background: #FF3250;
+}
