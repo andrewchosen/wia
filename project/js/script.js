@@ -7,9 +7,9 @@ $(document).ready(function(){
 	$(".tab").click(function(){
 		$(".tab").removeClass("active");
 		$(this).addClass("active");
-		$("section#about").find("article").slideUp(500, "jswing");
+		$("section#about").find("article").hide();
 		var tabId = $(this).attr("data-id");
-		$(tabId).slideDown(1000, "jswing");
+		$(tabId).show("slide", {direction: 'left'});
 
 	});
 });

@@ -138,10 +138,15 @@ section#portfolio {
 }
 
 section#portfolio article {
-	width: 28.333333333333%;
-	margin: 0 2.5%;
+	width: 30.833333333333%;
+	margin: 0 1.25%;
 	float: left;
 	border: 1px solid #333;
+}
+
+section#portfolio article img {
+	width: 100%;
+	height: auto;
 }
 
 /* Contact */
@@ -183,9 +188,46 @@ section#contact textarea {
 section#contact button {
 	display: inline-block;
 	text-transform: uppercase;
-	padding: 12px 24px;
+	padding: 12px 36px;
 	margin-top: 2.5%;
-	font-size: 1.3rem;
-	border: 0;
 	cursor: pointer;
+	font-size: 0.9rem;
+	font-weight: bold;
+	border: 3px solid #f0f0f0;
+	color: #f0f0f0;
+	background-color: transparent;
 }
+
+section#contact button:hover {
+	background: #fff;
+	color: #000;
+}
+
+/*Chart*/
+
+.chart-container { width: 500px; margin: 10% auto; }
+
+.chart-content { height: 340px; position: relative; overflow: hidden; margin: 5px 0px 0px 0px; }
+
+.chart-y-axis { display: none; }
+
+.chart-x-axis { height: 50px; position: absolute; top: 300px; left: 60px; }
+.chart-x-axis p { position: absolute; top: 20px; width: 100px; color: #fff; text-align: center; font-size: 0.8rem; }
+.chart-area {
+	width: 600px;
+	height: 300px;
+	position: absolute;
+	top: 0px;
+	left: 50px;
+}
+
+.chart-area .chart-bar {
+	position: absolute;
+	bottom: 0px;
+	width: 60px;
+	height: 0px;
+}
+
+.chart-area .chart-bar { background-color: rgba(65,12,137,.6); }
+
+.chart-area .chart-bar p { margin: 5px 0px 0px 0px; text-align: center; color: #fff; display: none; }

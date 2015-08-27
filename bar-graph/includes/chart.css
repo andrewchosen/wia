@@ -42,11 +42,7 @@ body { font-family: Arial; font-size: 12px; }
 	background-position: 50% bottom;
 }
 
-.chart-area .chart-bar.sporting    { background-color: rgba(12,38,32,.6); background-image: url(../images/icon_sporting.png); }
-.chart-area .chart-bar.hoursewares { background-color: rgba(65,12,137,.6); background-image: url(../images/icon_housewares.png); }
-.chart-area .chart-bar.shipping    { background-color: rgba(4,11,83,.6); background-image: url(../images/icon_shipping.png); }
-.chart-area .chart-bar.clothing    { background-color: rgba(140,6,6,.6); background-image: url(../images/icon_clothing.png); }
-.chart-area .chart-bar.jewelry     { background-color: rgba(144,8,152,.6); background-image: url(../images/icon_jewelry.png); }
+.chart-area .chart-bar { background-color: rgba(65,12,137,.6); }
 
 .chart-area .chart-bar p { margin: 5px 0px 0px 0px; text-align: center; color: #fff; display: none; }
 
