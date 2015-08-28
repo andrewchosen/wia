@@ -1,0 +1,41 @@
+nav a {
+	color: rgba(255,255,255,0.5);
+}
+
+header {
+	background: rgba(0,0,0,0.6);
+}
+
+span {
+	background: rgba(200,200,200,.2);
+}
+
+section#about ul li a {
+	color: rgba(255,255,255,0.4);
+}
+
+section#portfolio article img {
+	border: 3px solid rgba(255,255,255,0.1);
+}
+
+section#portfolio article img:hover {
+	border-color: rgba(255,255,255,1);
+}
+
+section#portfolio article date {
+	color: rgba(255,255,255,0.5);
+}
+
+section#clients .detail_container a {
+	color: rgba(255,255,255,0.5);
+}
+
+section#clients .detail_container a:hover {
+	color: rgba(255,255,255,1);
+}
+
+section#contact input, section#contact textarea {
+	border: 1px solid rgba(255,255,255,0.2);
+}
+
+.chart-area .chart-bar { background-color: rgba(65,12,137,.6); }

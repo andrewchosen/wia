@@ -1,0 +1,47 @@
+nav a {
+	color: #fff;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+header {
+	background: #08080D;
+}
+
+span {
+	background: #ccc;
+}
+
+section#about ul li a {
+	color: #CCC;
+}
+
+section#portfolio article img {
+	border: 3px solid #555;
+}
+
+section#portfolio article img:hover {
+	border-color: #fff;
+}
+
+section#portfolio article date {
+	color: #ccc;
+}
+
+section#clients .detail_container a {
+	color: #ccc;
+}
+
+section#clients .detail_container a:hover {
+	color: #fff;
+}
+
+section#contact input, section#contact textarea {
+	border: 1px solid #555;
+}
+
+.chart-area .chart-bar {
+	background-color: rgb(65,12,137);
+}

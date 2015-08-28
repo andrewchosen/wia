@@ -18,10 +18,6 @@ nav {
 	z-index: 1;
 }
 
-nav a {
-	color: rgba(255,255,255,0.5);
-}
-
 nav a:hover {
 	color: #FFF;
 }
@@ -36,7 +32,7 @@ section, header {
 	max-width: 960px;
 	margin: auto;
 	overflow: auto;
-	padding: 10% 5%;
+	padding: 5% 5%;
 }
 
 /* Menu */
@@ -51,11 +47,20 @@ header nav ul li a {
 }
 
 h3 {
-	font-size: 3rem;
+	font-size: 3em;
 	text-transform: uppercase;
 }
 
 /* Home */
+
+header video {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
 
 header img {
 	margin-top: 5%;
@@ -66,7 +71,7 @@ header img {
 
 header h1 {
 	margin-top: 2.5%;
-	font-size: 4rem;
+	font-size: 4em;
 }
 
 header h1 a {
@@ -77,13 +82,12 @@ span {
 	display: block;
 	width: 0px;
 	height: 4px;
-	margin: 2.5% auto;
-	background: rgba(200,200,200,.2);
+	margin: 2.5% auto 5% auto;
 }
 
 header h2 {
-	font-size: 2rem;
-	color: #145E8C;
+	font-size: 2em;
+	color: #328C8C;
 }
 
 /* About */
@@ -99,8 +103,9 @@ section#about ul li {
 
 section#about ul li a {
 	display: block;
-	color: rgba(255,255,255,0.4);
 	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 1.3em;
 }
 
 section#about ul li a.active {
@@ -112,13 +117,15 @@ section#about ul li a:hover {
 }
 
 section#about p {
-	font-size: 14px;
+	font-size: 1.1em;
+	font-weight: 300;
 	text-align: left;
 	margin: 2.5% 0;
 }
 
 section#about article {
 	display: none;
+	padding: 0 5%;
 }
 
 section#about article.active {
@@ -141,12 +148,65 @@ section#portfolio article {
 	width: 30.833333333333%;
 	margin: 0 1.25%;
 	float: left;
-	border: 1px solid #333;
 }
 
 section#portfolio article img {
 	width: 100%;
 	height: auto;
+}
+
+section#portfolio article h4 {
+	margin-top: 10px;
+}
+
+section#portfolio article date {
+	font-size: 0.8em;
+}
+
+/* Clients */
+
+section#clients {
+	background-color: #328C8C;
+}
+
+section#clients article {
+	width: 600px;
+	height: 371px;
+	margin: auto;
+	position: relative;
+}
+
+section#clients img {
+	width: 100%;
+	opacity: 0.5;
+	height: auto;
+}
+
+section#clients .dot {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background-color: #FFF;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	z-index: 1;
+	cursor: pointer;
+}
+
+section#clients .dot:hover {
+	width: 12px;
+	height: 12px;
+	margin-top: -2px;
+	margin-left: -2px;
+}
+
+section#clients .client_detail_container { display: none; }
+section#clients .detail_container { margin-top: -20px; }
+
+section#clients .detail_container a {
+	font-size: 0.8em;
+	text-transform: uppercase;
 }
 
 /* Contact */
@@ -178,7 +238,12 @@ section#contact input, section#contact textarea {
 	display: block;
 	width: 100%;
 	background-color: transparent;
-	border: 1px solid rgba(255,255,255,0.2);
+	color: #F2F2F2;
+}
+
+section#contact input:focus, section#contact textarea:focus {
+	border: 1px solid #F2F2F2;
+	outline: 0;
 }
 
 section#contact textarea {
@@ -191,9 +256,9 @@ section#contact button {
 	padding: 12px 36px;
 	margin-top: 2.5%;
 	cursor: pointer;
-	font-size: 0.9rem;
+	font-size: 0.9em;
 	font-weight: bold;
-	border: 3px solid #f0f0f0;
+	border: 1px solid #f0f0f0;
 	color: #f0f0f0;
 	background-color: transparent;
 }
@@ -212,7 +277,7 @@ section#contact button:hover {
 .chart-y-axis { display: none; }
 
 .chart-x-axis { height: 50px; position: absolute; top: 300px; left: 60px; }
-.chart-x-axis p { position: absolute; top: 20px; width: 100px; color: #fff; text-align: center; font-size: 0.8rem; }
+.chart-x-axis p { position: absolute; top: 20px; width: 100px; color: #fff; text-align: center; font-size: 0.8em; }
 .chart-area {
 	width: 600px;
 	height: 300px;
@@ -227,7 +292,5 @@ section#contact button:hover {
 	width: 60px;
 	height: 0px;
 }
-
-.chart-area .chart-bar { background-color: rgba(65,12,137,.6); }
 
 .chart-area .chart-bar p { margin: 5px 0px 0px 0px; text-align: center; color: #fff; display: none; }
