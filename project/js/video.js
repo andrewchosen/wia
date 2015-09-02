@@ -1,4 +1,4 @@
 $(document).ready(function(){
 	console.log($("header").find(".container"));
-	$("header").find(".container").append("<video src='videos/dark_smoke.mov' autoplay loop></video>");
+	$("header").find(".container").append("<video src='videos/prism-light.avi' autoplay loop></video>");
 });
