@@ -20,7 +20,6 @@ nav a:hover {
 }
 
 section, header {
-	height: 100vh;
 	position: relative;
 	text-align: center;
 }
@@ -309,12 +308,17 @@ section#contact button:hover {
 	}
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:992px){
 	body {
-		font-size: 18px;
+		font-size: 16px;
+	}
+
+	section, header {
+		height: 100vh;
 	}
 
 	header h1 {
 		font-size: 4em;
 	}
+
 }
